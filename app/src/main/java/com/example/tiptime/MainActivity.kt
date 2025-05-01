@@ -58,8 +58,9 @@ class MainActivity : ComponentActivity() {
 }
 @Composable
 fun EditNumberField(modifier: Modifier = Modifier) {
+    var amountInput = "0"
     TextField(
-        value = "",
+        value = amountInput,
         onValueChange = {},
         modifier = modifier,
     )
